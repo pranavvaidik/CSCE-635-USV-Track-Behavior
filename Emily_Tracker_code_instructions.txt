@@ -1,0 +1,10 @@
+How to run emily-tracker code
+
+
+
+In terminal, change directory into the root directory of the project and run the following command to generate makefile:
+
+	cmake CMakeLists.txt
+
+Compile the project using C++ compiler.
+
