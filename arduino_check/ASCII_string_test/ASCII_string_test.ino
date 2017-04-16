@@ -10,11 +10,7 @@ void loop() {
     {
       digitalWrite(LED_BUILTIN,HIGH);
       delay(1000);
-    }
-    else if (Serial.read() == 'b')
-    {
       digitalWrite(LED_BUILTIN,LOW);
-      delay(1000);
     }
   }
 }
