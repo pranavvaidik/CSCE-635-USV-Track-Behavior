@@ -1,0 +1,8 @@
+prefix=/home/haresh/serialcomm/serial/build/devel
+
+Name: serial
+Description: Description of serial
+Version: 1.2.1
+Cflags: -I/home/haresh/serialcomm/serial/include
+Libs: -L/home/haresh/serialcomm/serial/build/devel/lib -lserial
+Requires: 

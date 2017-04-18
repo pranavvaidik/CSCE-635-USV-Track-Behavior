@@ -1,0 +1,24 @@
+#include <iostream>
+#include <SerialStream.h>
+using namespace std;
+using namespace LibSerial;
+
+class serial_comm{
+public:
+	void serial_comm()
+	{
+		SerialStream serial;
+		serial.Open("/dev/ttyACM0");
+		serial.SetCharSize(SerialStreamBuf::CHAR_SIZE_8);
+		serial.SetBaudRate(SerialStreamBuf::BAUD_9600);
+		serial.SetNumOfStopBits(1);
+		serial.SetFlowControl(SerialStreamBuf::FLOW_CONTROL_NONE);
+	}
+}
+
+
+int main() {
+	set_serialcomm();
+	serial<<'a';
+	return 0;
+}

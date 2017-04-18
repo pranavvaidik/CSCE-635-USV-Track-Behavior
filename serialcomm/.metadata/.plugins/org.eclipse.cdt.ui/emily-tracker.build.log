@@ -1,0 +1,1496 @@
+12:11:13 **** Incremental Build of configuration Default for project emily-tracker ****
+make all 
+Building file: ../Control.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -D__GXX_EXPERIMENTAL_CXX0X__ -I/usr/local/include/opencv -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Control.d" -MT"Control.o" -o "Control.o" "../Control.cpp"
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from /usr/local/include/opencv2/flann/lsh_table.h:49,
+                 from /usr/local/include/opencv2/flann/lsh_index.h:49,
+                 from /usr/local/include/opencv2/flann/all_indices.h:42,
+                 from /usr/local/include/opencv2/flann/flann_base.hpp:43,
+                 from /usr/local/include/opencv2/flann.hpp:48,
+                 from /usr/local/include/opencv2/opencv.hpp:62,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+In file included from /usr/local/include/opencv2/core/base.hpp:58:0,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/cvstd.hpp:412:12: error: expected ‘,’ or ‘...’ before ‘&&’ token
+     Ptr(Ptr&& o);
+            ^
+/usr/local/include/opencv2/core/cvstd.hpp:412:16: error: invalid constructor; you probably meant ‘cv::Ptr<T> (const cv::Ptr<T>&)’
+     Ptr(Ptr&& o);
+                ^
+/usr/local/include/opencv2/core/cvstd.hpp:413:25: error: expected ‘,’ or ‘...’ before ‘&&’ token
+     Ptr& operator = (Ptr&& o);
+                         ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:258:16: error: expected ‘,’ or ‘...’ before ‘&&’ token
+ Ptr<T>::Ptr(Ptr&& o) : owner(o.owner), stored(o.stored)
+                ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:258:1: error: prototype for ‘cv::Ptr<T>::Ptr(cv::Ptr<T>)’ does not match any in class ‘cv::Ptr<T>’
+ Ptr<T>::Ptr(Ptr&& o) : owner(o.owner), stored(o.stored)
+ ^
+In file included from /usr/local/include/opencv2/core/base.hpp:58:0,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/cvstd.hpp:341:5: error: candidates are: template<class T> template<class Y> cv::Ptr<T>::Ptr(const cv::Ptr<Y>&, T*)
+     Ptr(const Ptr<Y>& o, T* p);
+     ^
+/usr/local/include/opencv2/core/cvstd.hpp:334:5: error:                 template<class T> template<class Y> cv::Ptr<T>::Ptr(const cv::Ptr<Y>&)
+     Ptr(const Ptr<Y>& o);
+     ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:134:1: error:                 cv::Ptr<T>::Ptr(const cv::Ptr<T>&)
+ Ptr<T>::Ptr(const Ptr& o) : owner(o.owner), stored(o.stored)
+ ^
+In file included from /usr/local/include/opencv2/core/base.hpp:58:0,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/cvstd.hpp:313:5: error:                 template<class T> template<class Y, class D> cv::Ptr<T>::Ptr(Y*, D)
+     Ptr(Y* p, D d);
+     ^
+/usr/local/include/opencv2/core/cvstd.hpp:306:5: error:                 template<class T> template<class Y> cv::Ptr<T>::Ptr(Y*)
+     Ptr(Y* p);
+     ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:112:1: error:                 cv::Ptr<T>::Ptr()
+ Ptr<T>::Ptr() : owner(NULL), stored(NULL)
+ ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:35: error: expected ‘,’ or ‘...’ before ‘&&’ token
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+                                   ^
+/usr/local/include/opencv2/core/ptr.inl.hpp: In member function ‘cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>)’:
+/usr/local/include/opencv2/core/ptr.inl.hpp:267:18: error: ‘o’ was not declared in this scope
+     if (this == &o)
+                  ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:271:13: error: ‘o’ was not declared in this scope
+     owner = o.owner;
+             ^
+In file included from /usr/local/include/opencv2/core.hpp:54:0,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/matx.hpp: In member function ‘cv::Matx<_Tp, m1, n1> cv::Matx<_Tp, m, n>::reshape() const’:
+/usr/local/include/opencv2/core/matx.hpp:684:5: error: there are no arguments to ‘static_assert’ that depend on a template parameter, so a declaration of ‘static_assert’ must be available [-fpermissive]
+     CV_StaticAssert(m1*n1 == m*n, "Input and destnarion matrices must have the same number of elements");
+     ^
+/usr/local/include/opencv2/core/matx.hpp:684:5: note: (if you use ‘-fpermissive’, G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+/usr/local/include/opencv2/core/matx.hpp: In member function ‘const _Tp& cv::Matx<_Tp, m, n>::operator()(int) const’:
+/usr/local/include/opencv2/core/matx.hpp:743:5: error: there are no arguments to ‘static_assert’ that depend on a template parameter, so a declaration of ‘static_assert’ must be available [-fpermissive]
+     CV_StaticAssert(m == 1 || n == 1, "Single index indexation requires matrix to be a column or a row");
+     ^
+/usr/local/include/opencv2/core/matx.hpp: In member function ‘_Tp& cv::Matx<_Tp, m, n>::operator()(int)’:
+/usr/local/include/opencv2/core/matx.hpp:751:5: error: there are no arguments to ‘static_assert’ that depend on a template parameter, so a declaration of ‘static_assert’ must be available [-fpermissive]
+     CV_StaticAssert(m == 1 || n == 1, "Single index indexation requires matrix to be a column or a row");
+     ^
+/usr/local/include/opencv2/core/matx.hpp: In member function ‘cv::Vec<_Tp, m> cv::Vec<_Tp, cn>::cross(const cv::Vec<_Tp, cn>&) const’:
+/usr/local/include/opencv2/core/matx.hpp:1019:5: error: there are no arguments to ‘static_assert’ that depend on a template parameter, so a declaration of ‘static_assert’ must be available [-fpermissive]
+     CV_StaticAssert(cn == 3, "for arbitrary-size vector there is no cross-product defined");
+     ^
+In file included from /usr/local/include/opencv2/core.hpp:59:0,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.hpp: At global scope:
+/usr/local/include/opencv2/core/mat.hpp:1975:12: error: expected ‘,’ or ‘...’ before ‘&&’ token
+     Mat(Mat&& m);
+            ^
+/usr/local/include/opencv2/core/mat.hpp:1975:16: error: invalid constructor; you probably meant ‘cv::Mat (const cv::Mat&)’
+     Mat(Mat&& m);
+                ^
+/usr/local/include/opencv2/core/mat.hpp:1976:25: error: expected ‘,’ or ‘...’ before ‘&&’ token
+     Mat& operator = (Mat&& m);
+                         ^
+/usr/local/include/opencv2/core/mat.hpp:2216:14: error: expected ‘,’ or ‘...’ before ‘&&’ token
+     Mat_(Mat_&& m);
+              ^
+/usr/local/include/opencv2/core/mat.hpp:2216:18: error: invalid constructor; you probably meant ‘cv::Mat_<_Tp> (const cv::Mat_<_Tp>&)’
+     Mat_(Mat_&& m);
+                  ^
+/usr/local/include/opencv2/core/mat.hpp:2217:27: error: expected ‘,’ or ‘...’ before ‘&&’ token
+     Mat_& operator = (Mat_&& m);
+                           ^
+/usr/local/include/opencv2/core/mat.hpp:2219:13: error: expected ‘,’ or ‘...’ before ‘&&’ token
+     Mat_(Mat&& m);
+             ^
+/usr/local/include/opencv2/core/mat.hpp:2220:26: error: expected ‘,’ or ‘...’ before ‘&&’ token
+     Mat_& operator = (Mat&& m);
+                          ^
+/usr/local/include/opencv2/core/mat.hpp:2222:17: error: expected ‘,’ or ‘...’ before ‘&&’ token
+     Mat_(MatExpr&& e);
+                 ^
+/usr/local/include/opencv2/core/mat.hpp:2420:14: error: expected ‘,’ or ‘...’ before ‘&&’ token
+     UMat(UMat&& m);
+              ^
+/usr/local/include/opencv2/core/mat.hpp:2420:18: error: invalid constructor; you probably meant ‘cv::UMat (const cv::UMat&)’
+     UMat(UMat&& m);
+                  ^
+/usr/local/include/opencv2/core/mat.hpp:2421:27: error: expected ‘,’ or ‘...’ before ‘&&’ token
+     UMat& operator = (UMat&& m);
+                           ^
+In file included from /usr/local/include/opencv2/core/mat.hpp:3551:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.inl.hpp: In member function ‘void cv::Mat::assignTo(cv::Mat&, int) const’:
+/usr/local/include/opencv2/core/mat.inl.hpp:672:11: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Mat’ and ‘const cv::Mat’)
+         m = *this;
+           ^
+/usr/local/include/opencv2/core/mat.inl.hpp:596:6: note: candidate: cv::Mat& cv::Mat::operator=(const cv::Mat&)
+ Mat& Mat::operator = (const Mat& m)
+      ^
+In file included from /usr/local/include/opencv2/core.hpp:59:0,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.hpp:1976:10: note: candidate: cv::Mat& cv::Mat::operator=(cv::Mat)
+     Mat& operator = (Mat&& m);
+          ^
+In file included from /usr/local/include/opencv2/core/mat.hpp:3551:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.inl.hpp: At global scope:
+/usr/local/include/opencv2/core/mat.inl.hpp:1179:13: error: expected ‘,’ or ‘...’ before ‘&&’ token
+ Mat::Mat(Mat&& m)
+             ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1179:1: error: prototype for ‘cv::Mat::Mat(cv::Mat)’ does not match any in class ‘cv::Mat’
+ Mat::Mat(Mat&& m)
+ ^
+In file included from /usr/local/include/opencv2/core.hpp:59:0,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.hpp:979:14: error: candidates are: cv::Mat::Mat(const cv::cuda::GpuMat&)
+     explicit Mat(const cuda::GpuMat& m);
+              ^
+/usr/local/include/opencv2/core/mat.hpp:976:37: error:                 template<class _Tp> cv::Mat::Mat(const cv::MatCommaInitializer_<_Tp>&)
+     template<typename _Tp> explicit Mat(const MatCommaInitializer_<_Tp>& commaInitializer);
+                                     ^
+/usr/local/include/opencv2/core/mat.hpp:972:37: error:                 template<class _Tp> cv::Mat::Mat(const cv::Point3_<_Tp>&, bool)
+     template<typename _Tp> explicit Mat(const Point3_<_Tp>& pt, bool copyData=true);
+                                     ^
+/usr/local/include/opencv2/core/mat.hpp:968:37: error:                 template<class _Tp> cv::Mat::Mat(const cv::Point_<_Tp>&, bool)
+     template<typename _Tp> explicit Mat(const Point_<_Tp>& pt, bool copyData=true);
+                                     ^
+/usr/local/include/opencv2/core/mat.hpp:964:51: error:                 template<class _Tp, int m, int n> cv::Mat::Mat(const cv::Matx<_Tp, m, n>&, bool)
+     template<typename _Tp, int m, int n> explicit Mat(const Matx<_Tp, m, n>& mtx, bool copyData=true);
+                                                   ^
+/usr/local/include/opencv2/core/mat.hpp:960:44: error:                 template<class _Tp, int n> cv::Mat::Mat(const cv::Vec<_Tp, m>&, bool)
+     template<typename _Tp, int n> explicit Mat(const Vec<_Tp, n>& vec, bool copyData=true);
+                                            ^
+/usr/local/include/opencv2/core/mat.hpp:956:37: error:                 template<class _Tp> cv::Mat::Mat(const std::vector<_Tp>&, bool)
+     template<typename _Tp> explicit Mat(const std::vector<_Tp>& vec, bool copyData=false);
+                                     ^
+/usr/local/include/opencv2/core/mat.hpp:938:5: error:                 cv::Mat::Mat(const cv::Mat&, const std::vector<cv::Range>&)
+     Mat(const Mat& m, const std::vector<Range>& ranges);
+     ^
+/usr/local/include/opencv2/core/mat.hpp:928:5: error:                 cv::Mat::Mat(const cv::Mat&, const cv::Range*)
+     Mat(const Mat& m, const Range* ranges);
+     ^
+/usr/local/include/opencv2/core/mat.hpp:918:5: error:                 cv::Mat::Mat(const cv::Mat&, const Rect&)
+     Mat(const Mat& m, const Rect& roi);
+     ^
+/usr/local/include/opencv2/core/mat.hpp:908:5: error:                 cv::Mat::Mat(const cv::Mat&, const cv::Range&, const cv::Range&)
+     Mat(const Mat& m, const Range& rowRange, const Range& colRange=Range::all());
+     ^
+/usr/local/include/opencv2/core/mat.hpp:896:5: error:                 cv::Mat::Mat(const std::vector<int>&, int, void*, const size_t*)
+     Mat(const std::vector<int>& sizes, int type, void* data, const size_t* steps=0);
+     ^
+/usr/local/include/opencv2/core/mat.hpp:882:5: error:                 cv::Mat::Mat(int, const int*, int, void*, const size_t*)
+     Mat(int ndims, const int* sizes, int type, void* data, const size_t* steps=0);
+     ^
+In file included from /usr/local/include/opencv2/core/mat.hpp:3551:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.inl.hpp:459:1: error:                 cv::Mat::Mat(cv::Size, int, void*, size_t)
+ Mat::Mat(Size _sz, int _type, void* _data, size_t _step)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:426:1: error:                 cv::Mat::Mat(int, int, int, void*, size_t)
+ Mat::Mat(int _rows, int _cols, int _type, void* _data, size_t _step)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:407:1: error:                 cv::Mat::Mat(const cv::Mat&)
+ Mat::Mat(const Mat& m)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:398:1: error:                 cv::Mat::Mat(const std::vector<int>&, int, const Scalar&)
+ Mat::Mat(const std::vector<int>& _sz, int _type, const Scalar& _s)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:381:1: error:                 cv::Mat::Mat(int, const int*, int, const Scalar&)
+ Mat::Mat(int _dims, const int* _sz, int _type, const Scalar& _s)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:390:1: error:                 cv::Mat::Mat(const std::vector<int>&, int)
+ Mat::Mat(const std::vector<int>& _sz, int _type)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:373:1: error:                 cv::Mat::Mat(int, const int*, int)
+ Mat::Mat(int _dims, const int* _sz, int _type)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:364:1: error:                 cv::Mat::Mat(cv::Size, int, const Scalar&)
+ Mat::Mat(Size _sz, int _type, const Scalar& _s)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:347:1: error:                 cv::Mat::Mat(int, int, int, const Scalar&)
+ Mat::Mat(int _rows, int _cols, int _type, const Scalar& _s)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:356:1: error:                 cv::Mat::Mat(cv::Size, int)
+ Mat::Mat(Size _sz, int _type)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:339:1: error:                 cv::Mat::Mat(int, int, int)
+ Mat::Mat(int _rows, int _cols, int _type)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:333:1: error:                 cv::Mat::Mat()
+ Mat::Mat()
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1204:26: error: expected ‘,’ or ‘...’ before ‘&&’ token
+ Mat& Mat::operator = (Mat&& m)
+                          ^
+/usr/local/include/opencv2/core/mat.inl.hpp: In member function ‘cv::Mat& cv::Mat::operator=(cv::Mat)’:
+/usr/local/include/opencv2/core/mat.inl.hpp:1206:18: error: ‘m’ was not declared in this scope
+     if (this == &m)
+                  ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1210:13: error: ‘m’ was not declared in this scope
+     flags = m.flags; dims = m.dims; rows = m.rows; cols = m.cols; data = m.data;
+             ^
+/usr/local/include/opencv2/core/mat.inl.hpp: At global scope:
+/usr/local/include/opencv2/core/mat.inl.hpp:1813:21: error: expected ‘,’ or ‘...’ before ‘&&’ token
+ Mat_<_Tp>::Mat_(Mat_&& m)
+                     ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1813:1: error: prototype for ‘cv::Mat_<_Tp>::Mat_(cv::Mat_<_Tp>)’ does not match any in class ‘cv::Mat_<_Tp>’
+ Mat_<_Tp>::Mat_(Mat_&& m)
+ ^
+In file included from /usr/local/include/opencv2/core.hpp:59:0,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.hpp:2222:5: error: candidates are: cv::Mat_<_Tp>::Mat_(cv::MatExpr)
+     Mat_(MatExpr&& e);
+     ^
+/usr/local/include/opencv2/core/mat.hpp:2219:5: error:                 cv::Mat_<_Tp>::Mat_(cv::Mat)
+     Mat_(Mat&& m);
+     ^
+In file included from /usr/local/include/opencv2/core/mat.hpp:3551:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.inl.hpp:1462:1: error:                 cv::Mat_<_Tp>::Mat_(const cv::MatCommaInitializer_<_Tp>&)
+ Mat_<_Tp>::Mat_(const MatCommaInitializer_<_Tp>& commaInitializer)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1453:1: error:                 cv::Mat_<_Tp>::Mat_(const cv::Point3_<typename cv::DataType<_Tp>::channel_type>&, bool)
+ Mat_<_Tp>::Mat_(const Point3_<typename DataType<_Tp>::channel_type>& pt, bool copyData)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1444:1: error:                 cv::Mat_<_Tp>::Mat_(const cv::Point_<typename cv::DataType<_Tp>::channel_type>&, bool)
+ Mat_<_Tp>::Mat_(const Point_<typename DataType<_Tp>::channel_type>& pt, bool copyData)
+ ^
+In file included from /usr/local/include/opencv2/core.hpp:59:0,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.hpp:2112:37: error:                 template<class _Tp> template<int m, int n> cv::Mat_<_Tp>::Mat_(const cv::Matx<typename cv::DataType<_Tp>::channel_type, m, n>&, bool)
+     template<int m, int n> explicit Mat_(const Matx<typename DataType<_Tp>::channel_type, m, n>& mtx, bool copyData=true);
+                                     ^
+/usr/local/include/opencv2/core/mat.hpp:2111:30: error:                 template<class _Tp> template<int n> cv::Mat_<_Tp>::Mat_(const cv::Vec<typename cv::DataType<_Tp>::channel_type, n>&, bool)
+     template<int n> explicit Mat_(const Vec<typename DataType<_Tp>::channel_type, n>& vec, bool copyData=true);
+                              ^
+In file included from /usr/local/include/opencv2/core/mat.hpp:3551:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.inl.hpp:1467:1: error:                 cv::Mat_<_Tp>::Mat_(const std::vector<_Tp>&, bool)
+ Mat_<_Tp>::Mat_(const std::vector<_Tp>& vec, bool copyData)
+ ^
+In file included from /usr/local/include/opencv2/core.hpp:59:0,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.hpp:2108:14: error:                 cv::Mat_<_Tp>::Mat_(const cv::MatExpr&)
+     explicit Mat_(const MatExpr& e);
+              ^
+In file included from /usr/local/include/opencv2/core/mat.hpp:3551:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.inl.hpp:1393:1: error:                 cv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const std::vector<cv::Range>&)
+ Mat_<_Tp>::Mat_(const Mat_<_Tp>& m, const std::vector<Range>& ranges)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1388:1: error:                 cv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const cv::Range*)
+ Mat_<_Tp>::Mat_(const Mat_<_Tp>& m, const Range* ranges)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1421:1: error:                 cv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const Rect&)
+ Mat_<_Tp>::Mat_(const Mat_& m, const Rect& roi)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1416:1: error:                 cv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&, const cv::Range&, const cv::Range&)
+ Mat_<_Tp>::Mat_(const Mat_& m, const Range& _rowRange, const Range& _colRange)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1383:1: error:                 cv::Mat_<_Tp>::Mat_(int, const int*, _Tp*, const size_t*)
+ Mat_<_Tp>::Mat_(int _dims, const int* _sz, _Tp* _data, const size_t* _steps)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1411:1: error:                 cv::Mat_<_Tp>::Mat_(int, int, _Tp*, size_t)
+ Mat_<_Tp>::Mat_(int _rows, int _cols, _Tp* _data, size_t steps)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1406:1: error:                 cv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&)
+ Mat_<_Tp>::Mat_(const Mat_& m)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1398:1: error:                 cv::Mat_<_Tp>::Mat_(const cv::Mat&)
+ Mat_<_Tp>::Mat_(const Mat& m)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1378:1: error:                 cv::Mat_<_Tp>::Mat_(int, const int*, const _Tp&)
+ Mat_<_Tp>::Mat_(int _dims, const int* _sz, const _Tp& _s)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1373:1: error:                 cv::Mat_<_Tp>::Mat_(int, const int*)
+ Mat_<_Tp>::Mat_(int _dims, const int* _sz)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1366:1: error:                 cv::Mat_<_Tp>::Mat_(cv::Size, const _Tp&)
+ Mat_<_Tp>::Mat_(Size _sz, const _Tp& value)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1361:1: error:                 cv::Mat_<_Tp>::Mat_(cv::Size)
+ Mat_<_Tp>::Mat_(Size _sz)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1354:1: error:                 cv::Mat_<_Tp>::Mat_(int, int, const _Tp&)
+ Mat_<_Tp>::Mat_(int _rows, int _cols, const _Tp& value)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1348:1: error:                 cv::Mat_<_Tp>::Mat_(int, int)
+ Mat_<_Tp>::Mat_(int _rows, int _cols)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1341:1: error:                 cv::Mat_<_Tp>::Mat_()
+ Mat_<_Tp>::Mat_()
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1819:39: error: expected ‘,’ or ‘...’ before ‘&&’ token
+ Mat_<_Tp>& Mat_<_Tp>::operator = (Mat_&& m)
+                                       ^
+/usr/local/include/opencv2/core/mat.inl.hpp: In member function ‘cv::Mat_<_Tp>& cv::Mat_<_Tp>::operator=(cv::Mat_<_Tp>)’:
+/usr/local/include/opencv2/core/mat.inl.hpp:1821:22: error: ‘move’ is not a member of ‘std’
+     Mat::operator = (std::move(m));
+                      ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1821:32: error: ‘m’ was not declared in this scope
+     Mat::operator = (std::move(m));
+                                ^
+/usr/local/include/opencv2/core/mat.inl.hpp: At global scope:
+/usr/local/include/opencv2/core/mat.inl.hpp:1826:20: error: expected ‘,’ or ‘...’ before ‘&&’ token
+ Mat_<_Tp>::Mat_(Mat&& m)
+                    ^
+/usr/local/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::Mat_<_Tp>::Mat_(cv::Mat)’:
+/usr/local/include/opencv2/core/mat.inl.hpp:1830:13: error: ‘m’ was not declared in this scope
+     *this = m;
+             ^
+/usr/local/include/opencv2/core/mat.inl.hpp: At global scope:
+/usr/local/include/opencv2/core/mat.inl.hpp:1834:38: error: expected ‘,’ or ‘...’ before ‘&&’ token
+ Mat_<_Tp>& Mat_<_Tp>::operator = (Mat&& m)
+                                      ^
+/usr/local/include/opencv2/core/mat.inl.hpp: In member function ‘cv::Mat_<_Tp>& cv::Mat_<_Tp>::operator=(cv::Mat)’:
+/usr/local/include/opencv2/core/mat.inl.hpp:1836:32: error: ‘m’ was not declared in this scope
+     if( DataType<_Tp>::type == m.type() )
+                                ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1838:30: error: expected primary-expression before ‘&&’ token
+         Mat::operator = ((Mat&&)m);
+                              ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1838:32: error: expected primary-expression before ‘)’ token
+         Mat::operator = ((Mat&&)m);
+                                ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1841:33: error: ‘m’ was not declared in this scope
+     if( DataType<_Tp>::depth == m.depth() )
+                                 ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1843:30: error: expected primary-expression before ‘&&’ token
+         Mat::operator = ((Mat&&)m.reshape(DataType<_Tp>::channels, m.dims, 0));
+                              ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1843:32: error: expected primary-expression before ‘)’ token
+         Mat::operator = ((Mat&&)m.reshape(DataType<_Tp>::channels, m.dims, 0));
+                                ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1847:5: error: ‘m’ was not declared in this scope
+     m.convertTo(*this, type());
+     ^
+/usr/local/include/opencv2/core/mat.inl.hpp: At global scope:
+/usr/local/include/opencv2/core/mat.inl.hpp:1852:24: error: expected ‘,’ or ‘...’ before ‘&&’ token
+ Mat_<_Tp>::Mat_(MatExpr&& e)
+                        ^
+/usr/local/include/opencv2/core/mat.inl.hpp: In constructor ‘cv::Mat_<_Tp>::Mat_(cv::MatExpr)’:
+/usr/local/include/opencv2/core/mat.inl.hpp:1856:17: error: ‘e’ was not declared in this scope
+     *this = Mat(e);
+                 ^
+/usr/local/include/opencv2/core/mat.inl.hpp: In member function ‘void cv::UMat::assignTo(cv::UMat&, int) const’:
+/usr/local/include/opencv2/core/mat.inl.hpp:3505:11: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::UMat’ and ‘const cv::UMat’)
+         m = *this;
+           ^
+/usr/local/include/opencv2/core/mat.inl.hpp:3431:7: note: candidate: cv::UMat& cv::UMat::operator=(const cv::UMat&)
+ UMat& UMat::operator = (const UMat& m)
+       ^
+In file included from /usr/local/include/opencv2/core.hpp:59:0,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.hpp:2421:11: note: candidate: cv::UMat& cv::UMat::operator=(cv::UMat)
+     UMat& operator = (UMat&& m);
+           ^
+In file included from /usr/local/include/opencv2/core/mat.hpp:3551:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.inl.hpp: At global scope:
+/usr/local/include/opencv2/core/mat.inl.hpp:3634:16: error: expected ‘,’ or ‘...’ before ‘&&’ token
+ UMat::UMat(UMat&& m)
+                ^
+/usr/local/include/opencv2/core/mat.inl.hpp:3634:1: error: prototype for ‘cv::UMat::UMat(cv::UMat)’ does not match any in class ‘cv::UMat’
+ UMat::UMat(UMat&& m)
+ ^
+In file included from /usr/local/include/opencv2/core.hpp:59:0,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.hpp:2293:37: error: candidates are: template<class _Tp> cv::UMat::UMat(const cv::MatCommaInitializer_<_Tp>&)
+     template<typename _Tp> explicit UMat(const MatCommaInitializer_<_Tp>& commaInitializer);
+                                     ^
+/usr/local/include/opencv2/core/mat.hpp:2291:37: error:                 template<class _Tp> cv::UMat::UMat(const cv::Point3_<_Tp>&, bool)
+     template<typename _Tp> explicit UMat(const Point3_<_Tp>& pt, bool copyData=true);
+                                     ^
+/usr/local/include/opencv2/core/mat.hpp:2289:37: error:                 template<class _Tp> cv::UMat::UMat(const cv::Point_<_Tp>&, bool)
+     template<typename _Tp> explicit UMat(const Point_<_Tp>& pt, bool copyData=true);
+                                     ^
+/usr/local/include/opencv2/core/mat.hpp:2287:51: error:                 template<class _Tp, int m, int n> cv::UMat::UMat(const cv::Matx<_Tp, m, n>&, bool)
+     template<typename _Tp, int m, int n> explicit UMat(const Matx<_Tp, m, n>& mtx, bool copyData=true);
+                                                   ^
+/usr/local/include/opencv2/core/mat.hpp:2285:44: error:                 template<class _Tp, int n> cv::UMat::UMat(const cv::Vec<_Tp, m>&, bool)
+     template<typename _Tp, int n> explicit UMat(const Vec<_Tp, n>& vec, bool copyData=true);
+                                            ^
+/usr/local/include/opencv2/core/mat.hpp:2283:37: error:                 template<class _Tp> cv::UMat::UMat(const std::vector<_Tp>&, bool)
+     template<typename _Tp> explicit UMat(const std::vector<_Tp>& vec, bool copyData=false);
+                                     ^
+/usr/local/include/opencv2/core/mat.hpp:2281:5: error:                 cv::UMat::UMat(const cv::UMat&, const std::vector<cv::Range>&)
+     UMat(const UMat& m, const std::vector<Range>& ranges);
+     ^
+/usr/local/include/opencv2/core/mat.hpp:2280:5: error:                 cv::UMat::UMat(const cv::UMat&, const cv::Range*)
+     UMat(const UMat& m, const Range* ranges);
+     ^
+/usr/local/include/opencv2/core/mat.hpp:2279:5: error:                 cv::UMat::UMat(const cv::UMat&, const Rect&)
+     UMat(const UMat& m, const Rect& roi);
+     ^
+/usr/local/include/opencv2/core/mat.hpp:2278:5: error:                 cv::UMat::UMat(const cv::UMat&, const cv::Range&, const cv::Range&)
+     UMat(const UMat& m, const Range& rowRange, const Range& colRange=Range::all());
+     ^
+In file included from /usr/local/include/opencv2/core/mat.hpp:3551:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.inl.hpp:3396:1: error:                 cv::UMat::UMat(const cv::UMat&)
+ UMat::UMat(const UMat& m)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:3388:1: error:                 cv::UMat::UMat(int, const int*, int, const Scalar&, cv::UMatUsageFlags)
+ UMat::UMat(int _dims, const int* _sz, int _type, const Scalar& _s, UMatUsageFlags _usageFlags)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:3381:1: error:                 cv::UMat::UMat(int, const int*, int, cv::UMatUsageFlags)
+ UMat::UMat(int _dims, const int* _sz, int _type, UMatUsageFlags _usageFlags)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:3373:1: error:                 cv::UMat::UMat(cv::Size, int, const Scalar&, cv::UMatUsageFlags)
+ UMat::UMat(Size _sz, int _type, const Scalar& _s, UMatUsageFlags _usageFlags)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:3358:1: error:                 cv::UMat::UMat(int, int, int, const Scalar&, cv::UMatUsageFlags)
+ UMat::UMat(int _rows, int _cols, int _type, const Scalar& _s, UMatUsageFlags _usageFlags)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:3366:1: error:                 cv::UMat::UMat(cv::Size, int, cv::UMatUsageFlags)
+ UMat::UMat(Size _sz, int _type, UMatUsageFlags _usageFlags)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:3351:1: error:                 cv::UMat::UMat(int, int, int, cv::UMatUsageFlags)
+ UMat::UMat(int _rows, int _cols, int _type, UMatUsageFlags _usageFlags)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:3346:1: error:                 cv::UMat::UMat(cv::UMatUsageFlags)
+ UMat::UMat(UMatUsageFlags _usageFlags)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:3658:29: error: expected ‘,’ or ‘...’ before ‘&&’ token
+ UMat& UMat::operator = (UMat&& m)
+                             ^
+/usr/local/include/opencv2/core/mat.inl.hpp: In member function ‘cv::UMat& cv::UMat::operator=(cv::UMat)’:
+/usr/local/include/opencv2/core/mat.inl.hpp:3660:18: error: ‘m’ was not declared in this scope
+     if (this == &m)
+                  ^
+/usr/local/include/opencv2/core/mat.inl.hpp:3663:13: error: ‘m’ was not declared in this scope
+     flags = m.flags; dims = m.dims; rows = m.rows; cols = m.cols;
+             ^
+In file included from /usr/local/include/opencv2/core.hpp:54:0,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/operations.hpp: In static member function ‘static void cv::SVD::compute(const cv::Matx<_Tp, m, n>&, cv::Matx<_Tp, nm, 1>&, cv::Matx<_Tp, m, l>&, cv::Matx<_Tp, m, n>&)’:
+/usr/local/include/opencv2/core/operations.hpp:303:5: error: there are no arguments to ‘static_assert’ that depend on a template parameter, so a declaration of ‘static_assert’ must be available [-fpermissive]
+     CV_StaticAssert( nm == MIN(m, n), "Invalid size of output vector.");
+     ^
+/usr/local/include/opencv2/core/operations.hpp: In static member function ‘static void cv::SVD::compute(const cv::Matx<_Tp, m, n>&, cv::Matx<_Tp, nm, 1>&)’:
+/usr/local/include/opencv2/core/operations.hpp:312:5: error: there are no arguments to ‘static_assert’ that depend on a template parameter, so a declaration of ‘static_assert’ must be available [-fpermissive]
+     CV_StaticAssert( nm == MIN(m, n), "Invalid size of output vector.");
+     ^
+/usr/local/include/opencv2/core/operations.hpp: In static member function ‘static void cv::SVD::backSubst(const cv::Matx<_Tp, nm, 1>&, const cv::Matx<_Tp, m, l>&, const cv::Matx<_Tp, m, n>&, const cv::Matx<_Tp, m, nb>&, cv::Matx<_Tp, n, nb>&)’:
+/usr/local/include/opencv2/core/operations.hpp:323:5: error: there are no arguments to ‘static_assert’ that depend on a template parameter, so a declaration of ‘static_assert’ must be available [-fpermissive]
+     CV_StaticAssert( nm == MIN(m, n), "Invalid size of output vector.");
+     ^
+In file included from /usr/local/include/opencv2/flann/lsh_index.h:49:0,
+                 from /usr/local/include/opencv2/flann/all_indices.h:42,
+                 from /usr/local/include/opencv2/flann/flann_base.hpp:43,
+                 from /usr/local/include/opencv2/flann.hpp:48,
+                 from /usr/local/include/opencv2/opencv.hpp:62,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/flann/lsh_table.h: At global scope:
+/usr/local/include/opencv2/flann/lsh_table.h:136:18: error: ‘unordered_map’ in namespace ‘std’ does not name a template type
+     typedef std::unordered_map<BucketKey, Bucket> BucketsSpace;
+                  ^
+/usr/local/include/opencv2/flann/lsh_table.h:319:5: error: ‘BucketsSpace’ does not name a type
+     BucketsSpace buckets_space_;
+     ^
+/usr/local/include/opencv2/flann/lsh_table.h: In member function ‘void cvflann::lsh::LshTable<ElementType>::add(unsigned int, const ElementType*)’:
+/usr/local/include/opencv2/flann/lsh_table.h:181:13: error: ‘buckets_space_’ was not declared in this scope
+             buckets_space_[key].push_back(value);
+             ^
+/usr/local/include/opencv2/flann/lsh_table.h: In member function ‘void cvflann::lsh::LshTable<ElementType>::add(cvflann::Matrix<T>)’:
+/usr/local/include/opencv2/flann/lsh_table.h:198:9: error: ‘buckets_space_’ was not declared in this scope
+         buckets_space_.rehash((buckets_space_.size() + dataset.rows) * 1.2);
+         ^
+/usr/local/include/opencv2/flann/lsh_table.h: In member function ‘const Bucket* cvflann::lsh::LshTable<ElementType>::getBucketFromKey(cvflann::lsh::BucketKey) const’:
+/usr/local/include/opencv2/flann/lsh_table.h:220:48: error: ‘buckets_space_’ was not declared in this scope
+             if (key_bitset_.test(key)) return &buckets_space_.find(key)->second;
+                                                ^
+/usr/local/include/opencv2/flann/lsh_table.h:226:13: error: ‘BucketsSpace’ has not been declared
+             BucketsSpace::const_iterator bucket_it, bucket_end = buckets_space_.end();
+             ^
+/usr/local/include/opencv2/flann/lsh_table.h:227:13: error: ‘bucket_it’ was not declared in this scope
+             bucket_it = buckets_space_.find(key);
+             ^
+/usr/local/include/opencv2/flann/lsh_table.h:227:25: error: ‘buckets_space_’ was not declared in this scope
+             bucket_it = buckets_space_.find(key);
+                         ^
+/usr/local/include/opencv2/flann/lsh_table.h:229:30: error: ‘bucket_end’ was not declared in this scope
+             if (bucket_it == bucket_end) return 0;
+                              ^
+/usr/local/include/opencv2/flann/lsh_table.h: In member function ‘void cvflann::lsh::LshTable<ElementType>::optimize()’:
+/usr/local/include/opencv2/flann/lsh_table.h:286:13: error: ‘buckets_space_’ was not declared in this scope
+         if (buckets_space_.size() > ((size_t(1) << key_size_) / 2)) {
+             ^
+/usr/local/include/opencv2/flann/lsh_table.h:290:18: error: ‘BucketsSpace’ has not been declared
+             for (BucketsSpace::const_iterator key_bucket = buckets_space_.begin(); key_bucket != buckets_space_.end(); ++key_bucket) buckets_speed_[key_bucket->first] = key_bucket->second;
+                  ^
+/usr/local/include/opencv2/flann/lsh_table.h:290:84: error: ‘key_bucket’ was not declared in this scope
+             for (BucketsSpace::const_iterator key_bucket = buckets_space_.begin(); key_bucket != buckets_space_.end(); ++key_bucket) buckets_speed_[key_bucket->first] = key_bucket->second;
+                                                                                    ^
+/usr/local/include/opencv2/flann/lsh_table.h:299:24: error: ‘buckets_space_’ was not declared in this scope
+         if (((std::max(buckets_space_.size(), buckets_speed_.size()) * CHAR_BIT * 3 * sizeof(BucketKey)) / 10
+                        ^
+/usr/local/include/opencv2/flann/lsh_table.h:305:18: error: ‘BucketsSpace’ has not been declared
+             for (BucketsSpace::const_iterator key_bucket = buckets_space_.begin(); key_bucket != buckets_space_.end(); ++key_bucket) key_bitset_.set(key_bucket->first);
+                  ^
+/usr/local/include/opencv2/flann/lsh_table.h:305:84: error: ‘key_bucket’ was not declared in this scope
+             for (BucketsSpace::const_iterator key_bucket = buckets_space_.begin(); key_bucket != buckets_space_.end(); ++key_bucket) key_bitset_.set(key_bucket->first);
+                                                                                    ^
+/usr/local/include/opencv2/flann/lsh_table.h: In member function ‘cvflann::lsh::LshStats cvflann::lsh::LshTable<ElementType>::getStats() const [with ElementType = unsigned char]’:
+/usr/local/include/opencv2/flann/lsh_table.h:426:38: error: ‘buckets_space_’ was not declared in this scope
+     if ((buckets_speed_.empty()) && (buckets_space_.empty())) {
+                                      ^
+/usr/local/include/opencv2/flann/lsh_table.h:443:14: error: ‘BucketsSpace’ has not been declared
+         for (BucketsSpace::const_iterator x = buckets_space_.begin(); x != buckets_space_.end(); ++x) {
+              ^
+/usr/local/include/opencv2/flann/lsh_table.h:443:71: error: ‘x’ was not declared in this scope
+         for (BucketsSpace::const_iterator x = buckets_space_.begin(); x != buckets_space_.end(); ++x) {
+                                                                       ^
+/usr/local/include/opencv2/flann/lsh_table.h:443:76: error: ‘buckets_space_’ was not declared in this scope
+         for (BucketsSpace::const_iterator x = buckets_space_.begin(); x != buckets_space_.end(); ++x) {
+                                                                            ^
+/usr/local/include/opencv2/flann/lsh_table.h:447:36: error: ‘buckets_space_’ was not declared in this scope
+         stats.bucket_size_mean_ /= buckets_space_.size();
+                                    ^
+In file included from /usr/local/include/opencv2/stitching.hpp:50:0,
+                 from /usr/local/include/opencv2/opencv.hpp:86,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/stitching/detail/motion_estimators.hpp: In member function ‘void cv::detail::BundleAdjusterBase::setRefinementMask(const cv::Mat&)’:
+/usr/local/include/opencv2/stitching/detail/motion_estimators.hpp:136:26: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Mat’ and ‘cv::Mat’)
+         refinement_mask_ = mask.clone();
+                          ^
+In file included from /usr/local/include/opencv2/core/mat.hpp:3551:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.inl.hpp:596:6: note: candidate: cv::Mat& cv::Mat::operator=(const cv::Mat&)
+ Mat& Mat::operator = (const Mat& m)
+      ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1204:6: note: candidate: cv::Mat& cv::Mat::operator=(cv::Mat)
+ Mat& Mat::operator = (Mat&& m)
+      ^
+In file included from /usr/local/include/opencv2/opencv.hpp:86:0,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/stitching.hpp: In member function ‘void cv::Stitcher::setFeaturesFinder(cv::Ptr<cv::detail::FeaturesFinder>)’:
+/usr/local/include/opencv2/stitching.hpp:190:28: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::detail::FeaturesFinder>’ and ‘cv::Ptr<cv::detail::FeaturesFinder>’)
+         { features_finder_ = features_finder; }
+                            ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::detail::FeaturesFinder]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::detail::FeaturesFinder; T = cv::detail::FeaturesFinder]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::detail::FeaturesFinder]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/opencv.hpp:86:0,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/stitching.hpp: In member function ‘void cv::Stitcher::setFeaturesMatcher(cv::Ptr<cv::detail::FeaturesMatcher>)’:
+/usr/local/include/opencv2/stitching.hpp:195:29: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::detail::FeaturesMatcher>’ and ‘cv::Ptr<cv::detail::FeaturesMatcher>’)
+         { features_matcher_ = features_matcher; }
+                             ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::detail::FeaturesMatcher]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::detail::FeaturesMatcher; T = cv::detail::FeaturesMatcher]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::detail::FeaturesMatcher]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/opencv.hpp:86:0,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/stitching.hpp: In member function ‘void cv::Stitcher::setMatchingMask(const cv::UMat&)’:
+/usr/local/include/opencv2/stitching.hpp:201:24: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::UMat’ and ‘cv::UMat’)
+         matching_mask_ = mask.clone();
+                        ^
+In file included from /usr/local/include/opencv2/core/mat.hpp:3551:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.inl.hpp:3431:7: note: candidate: cv::UMat& cv::UMat::operator=(const cv::UMat&)
+ UMat& UMat::operator = (const UMat& m)
+       ^
+/usr/local/include/opencv2/core/mat.inl.hpp:3658:7: note: candidate: cv::UMat& cv::UMat::operator=(cv::UMat)
+ UMat& UMat::operator = (UMat&& m)
+       ^
+In file included from /usr/local/include/opencv2/opencv.hpp:86:0,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/stitching.hpp: In member function ‘void cv::Stitcher::setBundleAdjuster(cv::Ptr<cv::detail::BundleAdjusterBase>)’:
+/usr/local/include/opencv2/stitching.hpp:207:28: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::detail::BundleAdjusterBase>’ and ‘cv::Ptr<cv::detail::BundleAdjusterBase>’)
+         { bundle_adjuster_ = bundle_adjuster; }
+                            ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::detail::BundleAdjusterBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::detail::BundleAdjusterBase; T = cv::detail::BundleAdjusterBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::detail::BundleAdjusterBase]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/opencv.hpp:86:0,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/stitching.hpp: In member function ‘void cv::Stitcher::setWarper(cv::Ptr<cv::WarperCreator>)’:
+/usr/local/include/opencv2/stitching.hpp:218:58: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::WarperCreator>’ and ‘cv::Ptr<cv::WarperCreator>’)
+     void setWarper(Ptr<WarperCreator> creator) { warper_ = creator; }
+                                                          ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::WarperCreator]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::WarperCreator; T = cv::WarperCreator]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::WarperCreator]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/opencv.hpp:86:0,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/stitching.hpp: In member function ‘void cv::Stitcher::setExposureCompensator(cv::Ptr<cv::detail::ExposureCompensator>)’:
+/usr/local/include/opencv2/stitching.hpp:223:26: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::detail::ExposureCompensator>’ and ‘cv::Ptr<cv::detail::ExposureCompensator>’)
+         { exposure_comp_ = exposure_comp; }
+                          ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::detail::ExposureCompensator]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::detail::ExposureCompensator; T = cv::detail::ExposureCompensator]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::detail::ExposureCompensator]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/opencv.hpp:86:0,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/stitching.hpp: In member function ‘void cv::Stitcher::setSeamFinder(cv::Ptr<cv::detail::SeamFinder>)’:
+/usr/local/include/opencv2/stitching.hpp:227:76: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::detail::SeamFinder>’ and ‘cv::Ptr<cv::detail::SeamFinder>’)
+     void setSeamFinder(Ptr<detail::SeamFinder> seam_finder) { seam_finder_ = seam_finder; }
+                                                                            ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::detail::SeamFinder]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::detail::SeamFinder; T = cv::detail::SeamFinder]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::detail::SeamFinder]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/opencv.hpp:86:0,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/stitching.hpp: In member function ‘void cv::Stitcher::setBlender(cv::Ptr<cv::detail::Blender>)’:
+/usr/local/include/opencv2/stitching.hpp:231:56: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::detail::Blender>’ and ‘cv::Ptr<cv::detail::Blender>’)
+     void setBlender(Ptr<detail::Blender> b) { blender_ = b; }
+                                                        ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::detail::Blender]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::detail::Blender; T = cv::detail::Blender]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::detail::Blender]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/videostab/stabilizer.hpp:50:0,
+                 from /usr/local/include/opencv2/videostab.hpp:78,
+                 from /usr/local/include/opencv2/opencv.hpp:98,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/videostab/global_motion.hpp: In member function ‘void cv::videostab::KeypointBasedMotionEstimator::setDetector(cv::Ptr<cv::Feature2D>)’:
+/usr/local/include/opencv2/videostab/global_motion.hpp:229:60: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::Feature2D>’ and ‘cv::Ptr<cv::Feature2D>’)
+     void setDetector(Ptr<FeatureDetector> val) { detector_ = val; }
+                                                            ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::Feature2D]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::Feature2D; T = cv::Feature2D]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::Feature2D]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/videostab/stabilizer.hpp:50:0,
+                 from /usr/local/include/opencv2/videostab.hpp:78,
+                 from /usr/local/include/opencv2/opencv.hpp:98,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/videostab/global_motion.hpp: In member function ‘void cv::videostab::KeypointBasedMotionEstimator::setOpticalFlowEstimator(cv::Ptr<cv::videostab::ISparseOptFlowEstimator>)’:
+/usr/local/include/opencv2/videostab/global_motion.hpp:232:88: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::ISparseOptFlowEstimator>’ and ‘cv::Ptr<cv::videostab::ISparseOptFlowEstimator>’)
+     void setOpticalFlowEstimator(Ptr<ISparseOptFlowEstimator> val) { optFlowEstimator_ = val; }
+                                                                                        ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::ISparseOptFlowEstimator]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::ISparseOptFlowEstimator; T = cv::videostab::ISparseOptFlowEstimator]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::ISparseOptFlowEstimator]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/videostab/stabilizer.hpp:50:0,
+                 from /usr/local/include/opencv2/videostab.hpp:78,
+                 from /usr/local/include/opencv2/opencv.hpp:98,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/videostab/global_motion.hpp: In member function ‘void cv::videostab::KeypointBasedMotionEstimator::setOutlierRejector(cv::Ptr<cv::videostab::IOutlierRejector>)’:
+/usr/local/include/opencv2/videostab/global_motion.hpp:235:75: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::IOutlierRejector>’ and ‘cv::Ptr<cv::videostab::IOutlierRejector>’)
+     void setOutlierRejector(Ptr<IOutlierRejector> val) { outlierRejector_ = val; }
+                                                                           ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::IOutlierRejector]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::IOutlierRejector; T = cv::videostab::IOutlierRejector]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::IOutlierRejector]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/videostab/stabilizer.hpp:54:0,
+                 from /usr/local/include/opencv2/videostab.hpp:78,
+                 from /usr/local/include/opencv2/opencv.hpp:98,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/videostab/inpainting.hpp: In member function ‘void cv::videostab::MotionInpainter::setOptFlowEstimator(cv::Ptr<cv::videostab::IDenseOptFlowEstimator>)’:
+/usr/local/include/opencv2/videostab/inpainting.hpp:146:83: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::IDenseOptFlowEstimator>’ and ‘cv::Ptr<cv::videostab::IDenseOptFlowEstimator>’)
+     void setOptFlowEstimator(Ptr<IDenseOptFlowEstimator> val) { optFlowEstimator_ = val; }
+                                                                                   ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::IDenseOptFlowEstimator]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::IDenseOptFlowEstimator; T = cv::videostab::IDenseOptFlowEstimator]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::IDenseOptFlowEstimator]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/videostab/stabilizer.hpp:56:0,
+                 from /usr/local/include/opencv2/videostab.hpp:78,
+                 from /usr/local/include/opencv2/opencv.hpp:98,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/videostab/wobble_suppression.hpp: In member function ‘void cv::videostab::WobbleSuppressorBase::setMotionEstimator(cv::Ptr<cv::videostab::ImageMotionEstimatorBase>)’:
+/usr/local/include/opencv2/videostab/wobble_suppression.hpp:67:83: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::ImageMotionEstimatorBase>’ and ‘cv::Ptr<cv::videostab::ImageMotionEstimatorBase>’)
+     void setMotionEstimator(Ptr<ImageMotionEstimatorBase> val) { motionEstimator_ = val; }
+                                                                                   ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::ImageMotionEstimatorBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::ImageMotionEstimatorBase; T = cv::videostab::ImageMotionEstimatorBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::ImageMotionEstimatorBase]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/videostab.hpp:78:0,
+                 from /usr/local/include/opencv2/opencv.hpp:98,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/videostab/stabilizer.hpp: In member function ‘void cv::videostab::StabilizerBase::setLog(cv::Ptr<cv::videostab::ILog>)’:
+/usr/local/include/opencv2/videostab/stabilizer.hpp:71:40: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::ILog>’ and ‘cv::Ptr<cv::videostab::ILog>’)
+     void setLog(Ptr<ILog> ilog) { log_ = ilog; }
+                                        ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::ILog]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::ILog; T = cv::videostab::ILog]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::ILog]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/videostab.hpp:78:0,
+                 from /usr/local/include/opencv2/opencv.hpp:98,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/videostab/stabilizer.hpp: In member function ‘void cv::videostab::StabilizerBase::setFrameSource(cv::Ptr<cv::videostab::IFrameSource>)’:
+/usr/local/include/opencv2/videostab/stabilizer.hpp:77:63: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::IFrameSource>’ and ‘cv::Ptr<cv::videostab::IFrameSource>’)
+     void setFrameSource(Ptr<IFrameSource> val) { frameSource_ = val; }
+                                                               ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::IFrameSource]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::IFrameSource; T = cv::videostab::IFrameSource]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::IFrameSource]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/videostab.hpp:78:0,
+                 from /usr/local/include/opencv2/opencv.hpp:98,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/videostab/stabilizer.hpp: In member function ‘void cv::videostab::StabilizerBase::setMotionEstimator(cv::Ptr<cv::videostab::ImageMotionEstimatorBase>)’:
+/usr/local/include/opencv2/videostab/stabilizer.hpp:80:83: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::ImageMotionEstimatorBase>’ and ‘cv::Ptr<cv::videostab::ImageMotionEstimatorBase>’)
+     void setMotionEstimator(Ptr<ImageMotionEstimatorBase> val) { motionEstimator_ = val; }
+                                                                                   ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::ImageMotionEstimatorBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::ImageMotionEstimatorBase; T = cv::videostab::ImageMotionEstimatorBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::ImageMotionEstimatorBase]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/videostab.hpp:78:0,
+                 from /usr/local/include/opencv2/opencv.hpp:98,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/videostab/stabilizer.hpp: In member function ‘void cv::videostab::StabilizerBase::setDeblurer(cv::Ptr<cv::videostab::DeblurerBase>)’:
+/usr/local/include/opencv2/videostab/stabilizer.hpp:83:57: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::DeblurerBase>’ and ‘cv::Ptr<cv::videostab::DeblurerBase>’)
+     void setDeblurer(Ptr<DeblurerBase> val) { deblurer_ = val; }
+                                                         ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::DeblurerBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::DeblurerBase; T = cv::videostab::DeblurerBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::DeblurerBase]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/videostab.hpp:78:0,
+                 from /usr/local/include/opencv2/opencv.hpp:98,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/videostab/stabilizer.hpp: In member function ‘void cv::videostab::StabilizerBase::setInpainter(cv::Ptr<cv::videostab::InpainterBase>)’:
+/usr/local/include/opencv2/videostab/stabilizer.hpp:95:60: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::InpainterBase>’ and ‘cv::Ptr<cv::videostab::InpainterBase>’)
+     void setInpainter(Ptr<InpainterBase> val) { inpainter_ = val; }
+                                                            ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::InpainterBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::InpainterBase; T = cv::videostab::InpainterBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::InpainterBase]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/videostab.hpp:78:0,
+                 from /usr/local/include/opencv2/opencv.hpp:98,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/videostab/stabilizer.hpp: In member function ‘void cv::videostab::OnePassStabilizer::setMotionFilter(cv::Ptr<cv::videostab::MotionFilterBase>)’:
+/usr/local/include/opencv2/videostab/stabilizer.hpp:144:69: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::MotionFilterBase>’ and ‘cv::Ptr<cv::videostab::MotionFilterBase>’)
+     void setMotionFilter(Ptr<MotionFilterBase> val) { motionFilter_ = val; }
+                                                                     ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::MotionFilterBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::MotionFilterBase; T = cv::videostab::MotionFilterBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::MotionFilterBase]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/videostab.hpp:78:0,
+                 from /usr/local/include/opencv2/opencv.hpp:98,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/videostab/stabilizer.hpp: In member function ‘void cv::videostab::TwoPassStabilizer::setMotionStabilizer(cv::Ptr<cv::videostab::IMotionStabilizer>)’:
+/usr/local/include/opencv2/videostab/stabilizer.hpp:164:78: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::IMotionStabilizer>’ and ‘cv::Ptr<cv::videostab::IMotionStabilizer>’)
+     void setMotionStabilizer(Ptr<IMotionStabilizer> val) { motionStabilizer_ = val; }
+                                                                              ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::IMotionStabilizer]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::IMotionStabilizer; T = cv::videostab::IMotionStabilizer]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::IMotionStabilizer]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/videostab.hpp:78:0,
+                 from /usr/local/include/opencv2/opencv.hpp:98,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/videostab/stabilizer.hpp: In member function ‘void cv::videostab::TwoPassStabilizer::setWobbleSuppressor(cv::Ptr<cv::videostab::WobbleSuppressorBase>)’:
+/usr/local/include/opencv2/videostab/stabilizer.hpp:167:81: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::WobbleSuppressorBase>’ and ‘cv::Ptr<cv::videostab::WobbleSuppressorBase>’)
+     void setWobbleSuppressor(Ptr<WobbleSuppressorBase> val) { wobbleSuppressor_ = val; }
+                                                                                 ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::WobbleSuppressorBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::WobbleSuppressorBase; T = cv::videostab::WobbleSuppressorBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::WobbleSuppressorBase]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from ../Control.hpp:10:0,
+                 from ../Control.cpp:1:
+../Settings.hpp: At global scope:
+../Settings.hpp:26:32: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int video_capture_source = 0;
+                                ^
+../Settings.hpp:29:26: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int saturation_min = 120;
+                          ^
+../Settings.hpp:30:21: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int value_min = 10;
+                     ^
+../Settings.hpp:36:23: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+             0., 0., 1.);
+                       ^
+../Settings.hpp:39:92: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+             5.4296267484343998e-02, -5.9413030935709088e-01, 0., 0., 1.9565543630464968e+00);
+                                                                                            ^
+../Settings.hpp:88:21: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int hue_1_min = 0;
+                     ^
+../Settings.hpp:89:21: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int hue_1_max = 10;
+                     ^
+../Settings.hpp:92:21: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int hue_2_min = 160;
+                     ^
+../Settings.hpp:94:21: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int hue_2_max = 180;
+                     ^
+../Settings.hpp:97:26: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int saturation_max = 255;
+                          ^
+../Settings.hpp:100:21: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int value_max = 255;
+                     ^
+../Settings.hpp:103:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int blur_kernel_size = 21;
+                            ^
+../Settings.hpp:106:25: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int target_radius = 30;
+                         ^
+../Settings.hpp:109:24: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int proportional = 20;
+                        ^
+../Settings.hpp:112:32: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int camera_angle_degrees = 45;
+                                ^
+../Settings.hpp:116:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int erode_size = 2;
+                      ^
+../Settings.hpp:119:23: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int dilate_size = 16;
+                       ^
+../Settings.hpp:122:45: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const int EMILY_LOCATION_HISTORY_SIZE = 50;
+                                             ^
+../Settings.hpp:131:31: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const char * IP_ADDRESS = "192.168.1.4";
+                               ^
+../Settings.hpp:132:24: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const short PORT = 5007;
+                        ^
+../Settings.hpp:152:32: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const string MAIN_WINDOW = "EMILY Tracker";
+                                ^
+../Settings.hpp:155:37: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const string HISTOGRAM_WINDOW = "Histogram";
+                                     ^
+../Settings.hpp:158:51: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const Scalar LOCATION_COLOR = Scalar(0, 255, 0);
+                                                   ^
+../Settings.hpp:161:36: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const int LOCATION_THICKNESS = 1;
+                                    ^
+../Settings.hpp:164:54: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const Scalar POSE_LINE_COLOR = Scalar(0, 255, 255);
+                                                      ^
+../Settings.hpp:167:37: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const int POSE_LINE_THICKNESS = 1;
+                                     ^
+../Settings.hpp:170:40: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const int HEADING_LINE_THICKNESS = 1; // MOD change to 4 for lab testing
+                                        ^
+../Settings.hpp:173:37: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const int HEADING_LINE_LENGTH = 20; // MOD change to 200 for lab testing
+                                     ^
+../Settings.hpp:176:49: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const Scalar TARGET_COLOR = Scalar(0, 0, 255);
+                                                 ^
+../Settings.hpp:179:31: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const int TARGET_RADIUS = 10;
+                               ^
+../Settings.hpp:188:47: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const int PROCESSING_VIDEO_HEIGHT_LIMIT = 1200;
+                                               ^
+../Settings.hpp:191:35: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const int MIN_BLOB_AREA = 1 * 1;
+                                   ^
+In file included from ../Control.cpp:1:0:
+../Control.hpp:35:37: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const double turning_throttle = 0.3;
+                                     ^
+../Control.hpp:38:38: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const double cruising_throttle = 0.6;
+                                      ^
+../Control.hpp:41:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int slowing_distance = 3;
+                            ^
+In file included from /usr/local/include/opencv2/core/mat.hpp:3551:0,
+                 from /usr/local/include/opencv2/core.hpp:59,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/mat.inl.hpp: In instantiation of ‘cv::MatCommaInitializer_<_Tp>::operator cv::Mat_<_Tp>() const [with _Tp = double]’:
+../Settings.hpp:36:23:   required from here
+/usr/local/include/opencv2/core/mat.inl.hpp:3088:33: error: call of overloaded ‘Mat_(const cv::Mat&)’ is ambiguous
+     return Mat_<_Tp>(*this->it.m);
+                                 ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1826:1: note: candidate: cv::Mat_<_Tp>::Mat_(cv::Mat) [with _Tp = double; cv::Mat = cv::Mat]
+ Mat_<_Tp>::Mat_(Mat&& m)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1467:1: note: candidate: cv::Mat_<_Tp>::Mat_(const std::vector<_Tp>&, bool) [with _Tp = double]
+ Mat_<_Tp>::Mat_(const std::vector<_Tp>& vec, bool copyData)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1406:1: note: candidate: cv::Mat_<_Tp>::Mat_(const cv::Mat_<_Tp>&) [with _Tp = double]
+ Mat_<_Tp>::Mat_(const Mat_& m)
+ ^
+/usr/local/include/opencv2/core/mat.inl.hpp:1398:1: note: candidate: cv::Mat_<_Tp>::Mat_(const cv::Mat&) [with _Tp = double]
+ Mat_<_Tp>::Mat_(const Mat& m)
+ ^
+In file included from /usr/local/include/opencv2/core.hpp:54:0,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/matx.hpp: In instantiation of ‘cv::Matx<_Tp, m, n>::Matx(_Tp, _Tp, _Tp) [with _Tp = float; int m = 3; int n = 1]’:
+/usr/local/include/opencv2/core/matx.hpp:922:34:   required from ‘cv::Vec<_Tp, cn>::Vec(_Tp, _Tp, _Tp) [with _Tp = float; int cn = 3]’
+/usr/local/include/opencv2/core/matx.hpp:1028:67:   required from here
+/usr/local/include/opencv2/core/matx.hpp:511:5: error: ‘static_assert’ was not declared in this scope
+     CV_StaticAssert(channels >= 3, "Matx should have at least 3 elements.");
+     ^
+/usr/local/include/opencv2/core/matx.hpp: In instantiation of ‘cv::Matx<_Tp, m, n>::Matx(_Tp, _Tp, _Tp) [with _Tp = double; int m = 3; int n = 1]’:
+/usr/local/include/opencv2/core/matx.hpp:922:34:   required from ‘cv::Vec<_Tp, cn>::Vec(_Tp, _Tp, _Tp) [with _Tp = double; int cn = 3]’
+/usr/local/include/opencv2/core/matx.hpp:1036:67:   required from here
+/usr/local/include/opencv2/core/matx.hpp:511:5: error: ‘static_assert’ was not declared in this scope
+In file included from /usr/include/c++/5/vector:69:0,
+                 from /usr/local/include/opencv2/core/types.hpp:53,
+                 from /usr/local/include/opencv2/core.hpp:58,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/include/c++/5/bits/vector.tcc: In instantiation of ‘void std::vector<_Tp, _Alloc>::_M_insert_aux(std::vector<_Tp, _Alloc>::iterator, const _Tp&) [with _Tp = cv::Ptr<cv::videostab::IMotionStabilizer>; _Alloc = std::allocator<cv::Ptr<cv::videostab::IMotionStabilizer> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<cv::Ptr<cv::videostab::IMotionStabilizer>*, std::vector<cv::Ptr<cv::videostab::IMotionStabilizer> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = cv::Ptr<cv::videostab::IMotionStabilizer>*]’:
+/usr/include/c++/5/bits/stl_vector.h:925:17:   required from ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = cv::Ptr<cv::videostab::IMotionStabilizer>; _Alloc = std::allocator<cv::Ptr<cv::videostab::IMotionStabilizer> >; std::vector<_Tp, _Alloc>::value_type = cv::Ptr<cv::videostab::IMotionStabilizer>]’
+/usr/local/include/opencv2/videostab/motion_stabilizing.hpp:73:89:   required from here
+/usr/include/c++/5/bits/vector.tcc:343:16: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::IMotionStabilizer>’ and ‘cv::Ptr<cv::videostab::IMotionStabilizer>’)
+    *__position = __x_copy;
+                ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::IMotionStabilizer]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::IMotionStabilizer; T = cv::videostab::IMotionStabilizer]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::IMotionStabilizer]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/include/c++/5/vector:69:0,
+                 from /usr/local/include/opencv2/core/types.hpp:53,
+                 from /usr/local/include/opencv2/core.hpp:58,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/include/c++/5/bits/vector.tcc: In instantiation of ‘void std::vector<_Tp, _Alloc>::_M_insert_aux(std::vector<_Tp, _Alloc>::iterator, const _Tp&) [with _Tp = cv::Ptr<cv::videostab::InpainterBase>; _Alloc = std::allocator<cv::Ptr<cv::videostab::InpainterBase> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<cv::Ptr<cv::videostab::InpainterBase>*, std::vector<cv::Ptr<cv::videostab::InpainterBase> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = cv::Ptr<cv::videostab::InpainterBase>*]’:
+/usr/include/c++/5/bits/stl_vector.h:925:17:   required from ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = cv::Ptr<cv::videostab::InpainterBase>; _Alloc = std::allocator<cv::Ptr<cv::videostab::InpainterBase> >; std::vector<_Tp, _Alloc>::value_type = cv::Ptr<cv::videostab::InpainterBase>]’
+/usr/local/include/opencv2/videostab/inpainting.hpp:111:82:   required from here
+/usr/include/c++/5/bits/vector.tcc:343:16: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::InpainterBase>’ and ‘cv::Ptr<cv::videostab::InpainterBase>’)
+    *__position = __x_copy;
+                ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::InpainterBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::InpainterBase; T = cv::videostab::InpainterBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::InpainterBase]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/local/include/opencv2/core.hpp:54:0,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/matx.hpp: In instantiation of ‘cv::Matx<_Tp, m, n>::Matx(_Tp, _Tp) [with _Tp = float; int m = 2; int n = 1]’:
+/usr/local/include/opencv2/core/matx.hpp:918:30:   required from ‘cv::Vec<_Tp, cn>::Vec(_Tp, _Tp) [with _Tp = float; int cn = 2]’
+/usr/local/include/opencv2/core/matx.hpp:473:35:   required from ‘cv::Vec<_Tp, 2> cv::internal::conjugate(const cv::Vec<_Tp, 2>&) [with _Tp = float]’
+/usr/local/include/opencv2/core/matx.hpp:995:41:   required from here
+/usr/local/include/opencv2/core/matx.hpp:503:5: error: ‘static_assert’ was not declared in this scope
+     CV_StaticAssert(channels >= 2, "Matx should have at least 2 elements.");
+     ^
+/usr/local/include/opencv2/core/matx.hpp: In instantiation of ‘cv::Matx<_Tp, m, n>::Matx(_Tp, _Tp) [with _Tp = double; int m = 2; int n = 1]’:
+/usr/local/include/opencv2/core/matx.hpp:918:30:   required from ‘cv::Vec<_Tp, cn>::Vec(_Tp, _Tp) [with _Tp = double; int cn = 2]’
+/usr/local/include/opencv2/core/matx.hpp:473:35:   required from ‘cv::Vec<_Tp, 2> cv::internal::conjugate(const cv::Vec<_Tp, 2>&) [with _Tp = double]’
+/usr/local/include/opencv2/core/matx.hpp:1001:41:   required from here
+/usr/local/include/opencv2/core/matx.hpp:503:5: error: ‘static_assert’ was not declared in this scope
+/usr/local/include/opencv2/core/matx.hpp: In instantiation of ‘cv::Matx<_Tp, m, n>::Matx(_Tp, _Tp, _Tp, _Tp) [with _Tp = float; int m = 4; int n = 1]’:
+/usr/local/include/opencv2/core/matx.hpp:926:38:   required from ‘cv::Vec<_Tp, cn>::Vec(_Tp, _Tp, _Tp, _Tp) [with _Tp = float; int cn = 4]’
+/usr/local/include/opencv2/core/matx.hpp:478:49:   required from ‘cv::Vec<_Tp, 4> cv::internal::conjugate(const cv::Vec<_Tp, 4>&) [with _Tp = float]’
+/usr/local/include/opencv2/core/matx.hpp:1007:41:   required from here
+/usr/local/include/opencv2/core/matx.hpp:519:5: error: ‘static_assert’ was not declared in this scope
+     CV_StaticAssert(channels >= 4, "Matx should have at least 4 elements.");
+     ^
+/usr/local/include/opencv2/core/matx.hpp: In instantiation of ‘cv::Matx<_Tp, m, n>::Matx(_Tp, _Tp, _Tp, _Tp) [with _Tp = double; int m = 4; int n = 1]’:
+/usr/local/include/opencv2/core/matx.hpp:926:38:   required from ‘cv::Vec<_Tp, cn>::Vec(_Tp, _Tp, _Tp, _Tp) [with _Tp = double; int cn = 4]’
+/usr/local/include/opencv2/core/matx.hpp:478:49:   required from ‘cv::Vec<_Tp, 4> cv::internal::conjugate(const cv::Vec<_Tp, 4>&) [with _Tp = double]’
+/usr/local/include/opencv2/core/matx.hpp:1013:41:   required from here
+/usr/local/include/opencv2/core/matx.hpp:519:5: error: ‘static_assert’ was not declared in this scope
+In file included from /usr/include/c++/5/algorithm:61:0,
+                 from /usr/local/include/opencv2/core/base.hpp:55,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/include/c++/5/bits/stl_algobase.h: In instantiation of ‘static _BI2 std::__copy_move_backward<false, false, std::random_access_iterator_tag>::__copy_move_b(_BI1, _BI1, _BI2) [with _BI1 = cv::Ptr<cv::videostab::IMotionStabilizer>*; _BI2 = cv::Ptr<cv::videostab::IMotionStabilizer>*]’:
+/usr/include/c++/5/bits/stl_algobase.h:604:58:   required from ‘_BI2 std::__copy_move_backward_a(_BI1, _BI1, _BI2) [with bool _IsMove = false; _BI1 = cv::Ptr<cv::videostab::IMotionStabilizer>*; _BI2 = cv::Ptr<cv::videostab::IMotionStabilizer>*]’
+/usr/include/c++/5/bits/stl_algobase.h:614:5:   required from ‘_BI2 std::__copy_move_backward_a2(_BI1, _BI1, _BI2) [with bool _IsMove = false; _BI1 = cv::Ptr<cv::videostab::IMotionStabilizer>*; _BI2 = cv::Ptr<cv::videostab::IMotionStabilizer>*]’
+/usr/include/c++/5/bits/stl_algobase.h:649:8:   required from ‘_BI2 std::copy_backward(_BI1, _BI1, _BI2) [with _BI1 = cv::Ptr<cv::videostab::IMotionStabilizer>*; _BI2 = cv::Ptr<cv::videostab::IMotionStabilizer>*]’
+/usr/include/c++/5/bits/vector.tcc:339:4:   required from ‘void std::vector<_Tp, _Alloc>::_M_insert_aux(std::vector<_Tp, _Alloc>::iterator, const _Tp&) [with _Tp = cv::Ptr<cv::videostab::IMotionStabilizer>; _Alloc = std::allocator<cv::Ptr<cv::videostab::IMotionStabilizer> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<cv::Ptr<cv::videostab::IMotionStabilizer>*, std::vector<cv::Ptr<cv::videostab::IMotionStabilizer> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = cv::Ptr<cv::videostab::IMotionStabilizer>*]’
+/usr/include/c++/5/bits/stl_vector.h:925:17:   required from ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = cv::Ptr<cv::videostab::IMotionStabilizer>; _Alloc = std::allocator<cv::Ptr<cv::videostab::IMotionStabilizer> >; std::vector<_Tp, _Alloc>::value_type = cv::Ptr<cv::videostab::IMotionStabilizer>]’
+/usr/local/include/opencv2/videostab/motion_stabilizing.hpp:73:89:   required from here
+/usr/include/c++/5/bits/stl_algobase.h:549:18: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::IMotionStabilizer>’ and ‘cv::Ptr<cv::videostab::IMotionStabilizer>’)
+      *--__result = *--__last;
+                  ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::IMotionStabilizer]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::IMotionStabilizer; T = cv::videostab::IMotionStabilizer]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::IMotionStabilizer]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+In file included from /usr/include/c++/5/algorithm:61:0,
+                 from /usr/local/include/opencv2/core/base.hpp:55,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/include/c++/5/bits/stl_algobase.h: In instantiation of ‘static _BI2 std::__copy_move_backward<false, false, std::random_access_iterator_tag>::__copy_move_b(_BI1, _BI1, _BI2) [with _BI1 = cv::Ptr<cv::videostab::InpainterBase>*; _BI2 = cv::Ptr<cv::videostab::InpainterBase>*]’:
+/usr/include/c++/5/bits/stl_algobase.h:604:58:   required from ‘_BI2 std::__copy_move_backward_a(_BI1, _BI1, _BI2) [with bool _IsMove = false; _BI1 = cv::Ptr<cv::videostab::InpainterBase>*; _BI2 = cv::Ptr<cv::videostab::InpainterBase>*]’
+/usr/include/c++/5/bits/stl_algobase.h:614:5:   required from ‘_BI2 std::__copy_move_backward_a2(_BI1, _BI1, _BI2) [with bool _IsMove = false; _BI1 = cv::Ptr<cv::videostab::InpainterBase>*; _BI2 = cv::Ptr<cv::videostab::InpainterBase>*]’
+/usr/include/c++/5/bits/stl_algobase.h:649:8:   required from ‘_BI2 std::copy_backward(_BI1, _BI1, _BI2) [with _BI1 = cv::Ptr<cv::videostab::InpainterBase>*; _BI2 = cv::Ptr<cv::videostab::InpainterBase>*]’
+/usr/include/c++/5/bits/vector.tcc:339:4:   required from ‘void std::vector<_Tp, _Alloc>::_M_insert_aux(std::vector<_Tp, _Alloc>::iterator, const _Tp&) [with _Tp = cv::Ptr<cv::videostab::InpainterBase>; _Alloc = std::allocator<cv::Ptr<cv::videostab::InpainterBase> >; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<cv::Ptr<cv::videostab::InpainterBase>*, std::vector<cv::Ptr<cv::videostab::InpainterBase> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = cv::Ptr<cv::videostab::InpainterBase>*]’
+/usr/include/c++/5/bits/stl_vector.h:925:17:   required from ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = cv::Ptr<cv::videostab::InpainterBase>; _Alloc = std::allocator<cv::Ptr<cv::videostab::InpainterBase> >; std::vector<_Tp, _Alloc>::value_type = cv::Ptr<cv::videostab::InpainterBase>]’
+/usr/local/include/opencv2/videostab/inpainting.hpp:111:82:   required from here
+/usr/include/c++/5/bits/stl_algobase.h:549:18: error: ambiguous overload for ‘operator=’ (operand types are ‘cv::Ptr<cv::videostab::InpainterBase>’ and ‘cv::Ptr<cv::videostab::InpainterBase>’)
+      *--__result = *--__last;
+                  ^
+In file included from /usr/local/include/opencv2/core/cvstd.hpp:1064:0,
+                 from /usr/local/include/opencv2/core/base.hpp:58,
+                 from /usr/local/include/opencv2/core.hpp:54,
+                 from /usr/local/include/opencv2/opencv.hpp:52,
+                 from ../Settings.hpp:4,
+                 from ../Control.hpp:10,
+                 from ../Control.cpp:1:
+/usr/local/include/opencv2/core/ptr.inl.hpp:160:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::videostab::InpainterBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<T>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:168:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = cv::videostab::InpainterBase; T = cv::videostab::InpainterBase]
+ Ptr<T>& Ptr<T>::operator = (const Ptr<Y>& o)
+         ^
+/usr/local/include/opencv2/core/ptr.inl.hpp:265:9: note: candidate: cv::Ptr<T>& cv::Ptr<T>::operator=(cv::Ptr<T>) [with T = cv::videostab::InpainterBase]
+ Ptr<T>& Ptr<T>::operator = (Ptr<T>&& o)
+         ^
+subdir.mk:42: recipe for target 'Control.o' failed
+make: *** [Control.o] Error 1
+
+12:11:14 Build Finished (took 877ms)
+

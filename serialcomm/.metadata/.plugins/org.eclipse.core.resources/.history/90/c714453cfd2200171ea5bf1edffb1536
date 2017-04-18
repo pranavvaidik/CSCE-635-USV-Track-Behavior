@@ -1,0 +1,1 @@
+/usr/bin/g++      CMakeFiles/serial_example.dir/examples/serial_example.cc.o  -o devel/lib/serial/serial_example -rdynamic devel/lib/libserial.so -lrt -lpthread -Wl,-rpath,/home/haresh/serialcomm/serial/build/devel/lib 

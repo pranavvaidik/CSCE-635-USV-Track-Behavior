@@ -1,0 +1,12 @@
+#include <iostream>
+#include <SerialStream.h>
+#include "serial_communication.h"
+using namespace std;
+using namespace LibSerial;
+
+int main() {
+	serial_comm test;
+	//test.send_char('a');
+	test.gimball_roll(0.1);
+	return 0;
+}

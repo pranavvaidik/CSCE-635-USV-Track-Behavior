@@ -1,0 +1,329 @@
+13:41:43 **** Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+13:41:56 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:41:57 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:41:58 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:42:36 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+../src/fotokite_serialcom.cpp: In function ‘int main()’:
+../src/fotokite_serialcom.cpp:10:7: error: ‘class serial_comm’ has no member named ‘gimball_roll’
+  test.gimball_roll(0.1);
+       ^
+src/subdir.mk:18: recipe for target 'src/fotokite_serialcom.o' failed
+make: *** [src/fotokite_serialcom.o] Error 1
+13:42:47 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+13:43:03 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+13:43:08 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:43:18 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+13:43:21 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:43:25 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:43:28 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:47:18 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+13:47:50 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+13:47:53 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:48:13 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+13:51:22 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+13:51:24 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:51:25 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:51:27 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:51:39 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+../src/fotokite_serialcom.cpp: In function ‘int main()’:
+../src/fotokite_serialcom.cpp:10:26: error: no matching function for call to ‘serial_comm::fotokite_yaw(float, int)’
+  test.fotokite_yaw(0.2f,1);
+                          ^
+In file included from ../src/fotokite_serialcom.cpp:3:0:
+../src/serial_communication.h:52:6: note: candidate: void serial_comm::fotokite_yaw(float)
+ void serial_comm::fotokite_yaw(float g)
+      ^
+../src/serial_communication.h:52:6: note:   candidate expects 1 argument, 2 provided
+make: *** [src/fotokite_serialcom.o] Error 1
+src/subdir.mk:18: recipe for target 'src/fotokite_serialcom.o' failed
+13:51:41 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+../src/fotokite_serialcom.cpp: In function ‘int main()’:
+../src/fotokite_serialcom.cpp:10:26: error: no matching function for call to ‘serial_comm::fotokite_yaw(float, int)’
+  test.fotokite_yaw(0.2f,1);
+                          ^
+In file included from ../src/fotokite_serialcom.cpp:3:0:
+../src/serial_communication.h:52:6: note: candidate: void serial_comm::fotokite_yaw(float)
+ void serial_comm::fotokite_yaw(float g)
+      ^
+../src/serial_communication.h:52:6: note:   candidate expects 1 argument, 2 provided
+src/subdir.mk:18: recipe for target 'src/fotokite_serialcom.o' failed
+make: *** [src/fotokite_serialcom.o] Error 1
+13:51:43 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+13:51:44 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:53:41 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+In file included from ../src/fotokite_serialcom.cpp:3:0:
+../src/serial_communication.h: In member function ‘void serial_comm::gimbal_roll(float)’:
+../src/serial_communication.h:41:18: error: ‘floorf’ was not declared in this scope
+ { g = floorf(g*10)/10;
+                  ^
+../src/serial_communication.h: In member function ‘void serial_comm::gimbal_pitch(float)’:
+../src/serial_communication.h:48:17: error: ‘floorf’ was not declared in this scope
+  g = floorf(g*10)/10;
+                 ^
+../src/serial_communication.h: In member function ‘void serial_comm::fotokite_yaw(float)’:
+../src/serial_communication.h:55:17: error: ‘floorf’ was not declared in this scope
+  g = floorf(g*10)/10;
+                 ^
+make: *** [src/fotokite_serialcom.o] Error 1
+src/subdir.mk:18: recipe for target 'src/fotokite_serialcom.o' failed
+13:53:44 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+In file included from ../src/fotokite_serialcom.cpp:3:0:
+../src/serial_communication.h: In member function ‘void serial_comm::gimbal_roll(float)’:
+../src/serial_communication.h:41:18: error: ‘floorf’ was not declared in this scope
+ { g = floorf(g*10)/10;
+                  ^
+../src/serial_communication.h: In member function ‘void serial_comm::gimbal_pitch(float)’:
+../src/serial_communication.h:48:17: error: ‘floorf’ was not declared in this scope
+  g = floorf(g*10)/10;
+                 ^
+../src/serial_communication.h: In member function ‘void serial_comm::fotokite_yaw(float)’:
+../src/serial_communication.h:55:17: error: ‘floorf’ was not declared in this scope
+  g = floorf(g*10)/10;
+                 ^
+make: *** [src/fotokite_serialcom.o] Error 1
+src/subdir.mk:18: recipe for target 'src/fotokite_serialcom.o' failed
+13:53:59 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+13:54:02 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:54:06 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:54:06 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:54:21 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+13:54:23 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:54:33 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+13:54:34 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:54:59 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+13:55:01 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+13:56:31 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+14:07:45 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+14:07:47 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.
+17:29:28 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+17:35:24 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+Building file: ../src/fotokite_serialcom.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I/home/haresh/serialcomm/boost_1_61_0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/fotokite_serialcom.d" -MT"src/fotokite_serialcom.o" -o "src/fotokite_serialcom.o" "../src/fotokite_serialcom.cpp"
+Finished building: ../src/fotokite_serialcom.cpp
+ 
+Building target: fotokite_serialcom
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -L/home/haresh/serialcomm/boost_1_61_0/stage/lib -pthread -o "fotokite_serialcom"  ./src/fotokite_serialcom.o   -lserial
+Finished building target: fotokite_serialcom
+ 
+17:35:27 **** Incremental Build of configuration Release for project fotokite_serialcom ****
+make all 
+make: Nothing to be done for 'all'.

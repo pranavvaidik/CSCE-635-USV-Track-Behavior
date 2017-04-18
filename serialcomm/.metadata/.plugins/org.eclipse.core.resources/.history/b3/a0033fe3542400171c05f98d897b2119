@@ -1,0 +1,16 @@
+#include <iostream>
+#include <SerialStream.h>
+using namespace std;
+using namespace LibSerial;
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	SerialStream serial;
+	serial.Open("/dev/ttyUSB0");
+	serial.SetCharSize(SerialStreamBuf::CHAR_SIZE_8);
+	serial.SetBaudRate(SerialStreamBuf::DEFAULT_BAUD);
+	serial.SetNumOfStopBits(1);
+	serial.SetFlowControl(SerialStreamBuf::FLOW_CONTROL_NONE);
+
+	return 0;
+}

@@ -1,0 +1,9 @@
+#include <iostream>
+#include<SerialStream.h>
+using namespace std;
+using namespace LibSerial ;
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	SerialStream my_serial_stream( "/dev/ttyACM0" ) ;
+	return 0;
+}

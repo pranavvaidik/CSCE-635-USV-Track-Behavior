@@ -1,0 +1,21 @@
+#include <iostream>
+#include <SerialStream.h>
+using namespace std;
+using namespace LibSerial;
+
+void set_serialcomm()
+{
+	SerialStream serial;
+	serial.Open("/dev/ttyACM0");
+	serial.SetCharSize(SerialStreamBuf::CHAR_SIZE_8);
+	serial.SetBaudRate(SerialStreamBuf::BAUD_9600);
+	serial.SetNumOfStopBits(1);
+	serial.SetFlowControl(SerialStreamBuf::FLOW_CONTROL_NONE);
+}
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+
+	cout<<"send successful";
+	serial<<'a';
+	return 0;
+}

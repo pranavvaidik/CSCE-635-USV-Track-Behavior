@@ -1,0 +1,11 @@
+#include <iostream>
+#include <SerialStream.h>
+using namespace std;
+using namespace LibSerial;
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	SerialStream serial;
+	serial.Open("/dev/ttyUSB0");
+	return 0;
+}
