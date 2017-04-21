@@ -18,44 +18,45 @@ class serial_comm
 {
 SerialStream serial;
 public:
-	serial_comm();
-	int send_char(char);
-	void gimbal_roll(float);
-	void gimbal_pitch(float);
-	void fotokite_yaw(float);
+    serial_comm();
+    int send_char(char);
+    void gimbal_roll(float);
+    void gimbal_pitch(float);
+    void fotokite_yaw(float);
 };
 
-serial_comm::serial_comm(){
-			serial.Open("/dev/ttyACM0");
-			serial.SetCharSize(SerialStreamBuf::CHAR_SIZE_8);
-			serial.SetBaudRate(SerialStreamBuf::BAUD_115200);
-			serial.SetNumOfStopBits(1);
-			serial.SetFlowControl(SerialStreamBuf::FLOW_CONTROL_NONE);
-			serial<<"RemoteControl start";
+serial_comm::serial_comm()
+{
+    serial.Open("/dev/ttyACM0");
+    serial.SetCharSize(SerialStreamBuf::CHAR_SIZE_8);
+    serial.SetBaudRate(SerialStreamBuf::BAUD_115200);
+    serial.SetNumOfStopBits(1);
+    serial.SetFlowControl(SerialStreamBuf::FLOW_CONTROL_NONE);
+    serial<<"RemoteControl start";
 }
 int serial_comm::send_char(char a){
-	serial<<a<<endl;
-	return 0;
+    serial<<a<<endl;
+    return 0;
 }
 
 void serial_comm::gimbal_roll(float g)
 {
-	serial<<"GimbalRoll "<<to_string(g)<<"<CR>";
-	cout<<to_string(g)<<" gimbal ROLL value sent to the fotokite";
-	serial<<endl;
+    serial<<"GimbalRoll "<<to_string(g)<<"<CR>";
+    cout<<to_string(g)<<" gimbal ROLL value sent to the fotokite";
+    serial<<endl;
 }
 void serial_comm::gimbal_pitch(float g)
 {
-	serial<<"GimbalPitch "<<to_string(g)<<"<CR>";
-	cout<<to_string(g)<<" gimbal PITCH value sent to the fotokite";
-	serial<<endl;
+    serial<<"GimbalPitch "<<to_string(g)<<"<CR>";
+    cout<<to_string(g)<<" gimbal PITCH value sent to the fotokite";
+    serial<<endl;
 }
 void serial_comm::fotokite_yaw(float g)
 {
-	serial<<"Yaw "<<to_string(g)<<"<CR>";
-	cout<<to_string(g)<<" fotokite YAW value sent to the fotokite";
-	serial<<endl;
+    serial<<"Yaw "<<to_string(g)<<"<CR>";
+    cout<<to_string(g)<<" fotokite YAW value sent to the fotokite";
+    serial<<endl;
 }
 
-
 #endif /* SERIAL_COMMUNICATION_H_ */
+
