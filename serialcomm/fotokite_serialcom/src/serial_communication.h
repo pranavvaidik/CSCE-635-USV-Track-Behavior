@@ -20,6 +20,7 @@ SerialStream serial;
 public:
     serial_comm();
     int send_char(char);
+    void send_serial_command(string);
     void gimbal_roll(float);
     void gimbal_pitch(float);
     void fotokite_yaw(float);
@@ -34,6 +35,13 @@ serial_comm::serial_comm()
     serial.SetFlowControl(SerialStreamBuf::FLOW_CONTROL_NONE);
     serial<<"RemoteControl start";
 }
+
+int serial_comm::send_serial_command(string str){
+    serial<<str;
+    cout << "command sent: "<< str <<endl;
+    return 0;
+}
+
 int serial_comm::send_char(char a){
     serial<<a<<endl;
     return 0;
