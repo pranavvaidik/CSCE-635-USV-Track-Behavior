@@ -36,10 +36,10 @@ serial_comm::serial_comm()
     serial<<"RemoteControl start";
 }
 
-int serial_comm::send_serial_command(string str){
+void serial_comm::send_serial_command(string str){
     serial<<str;
     cout << "command sent: "<< str <<endl;
-    return 0;
+    return;
 }
 
 int serial_comm::send_char(char a){
