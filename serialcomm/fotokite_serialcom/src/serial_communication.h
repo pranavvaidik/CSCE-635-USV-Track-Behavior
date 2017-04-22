@@ -37,7 +37,7 @@ serial_comm::serial_comm()
 }
 
 void serial_comm::send_serial_command(string str){
-    serial<<str;
+    serial<<str<<endl;
     cout << "command sent: "<< str <<endl;
     return;
 }
@@ -47,23 +47,23 @@ int serial_comm::send_char(char a){
     return 0;
 }
 
-void serial_comm::gimbal_roll(float g)
+void serial_comm::gimbal_roll(float value)
 {
-    serial<<"GimbalRoll "<<to_string(g)<<"<CR>";
-    cout<<to_string(g)<<" gimbal ROLL value sent to the fotokite";
-    serial<<endl;
+    string serial_command = "GimbalRoll " + to_string(value) + "<CR>";
+    send_serial_command(serial_command);
+    //serial<<endl;
 }
-void serial_comm::gimbal_pitch(float g)
+void serial_comm::gimbal_pitch(float value)
 {
-    serial<<"GimbalPitch "<<to_string(g)<<"<CR>";
-    cout<<to_string(g)<<" gimbal PITCH value sent to the fotokite";
-    serial<<endl;
+    string serial_command = "GimbalPitch " + to_string(value) + "<CR>";
+    send_serial_command(serial_command);
+    //serial<<endl;
 }
-void serial_comm::fotokite_yaw(float g)
+void serial_comm::fotokite_yaw(float value)
 {
-    serial<<"Yaw "<<to_string(g)<<"<CR>";
-    cout<<to_string(g)<<" fotokite YAW value sent to the fotokite";
-    serial<<endl;
+     string serial_command = "GimbalYaw " + to_string(value) + "<CR>";
+    send_serial_command(serial_command);
+    //serial<<endl;
 }
 
 #endif /* SERIAL_COMMUNICATION_H_ */
