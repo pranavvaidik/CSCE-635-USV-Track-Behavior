@@ -26,6 +26,8 @@ class serial_comm
         void gimbal_pitch(float);
         void fotokite_yaw(float);
         void stop_remote_control();
+        void stop_camera_movement();
+        void close_serial_communication();
 };
 
 
@@ -111,6 +113,19 @@ void serial_comm::fotokite_yaw(float value)
     string serial_command = "Yaw " + to_string(value) + "<CR>";
     send_serial_command(serial_command);
     //serial<<endl;
+}
+
+void serial_comm::stop_camera_movement()
+{
+    gimbal_pitch_roll(0,0);
+    fotokite_yaw(0);
+    cout<<"camera movement stopped";
+    //serial<<endl;
+}
+
+void serial_comm::close_serial_communication()
+{
+    serial.Close();
 }
 
 #endif /* SERIAL_COMMUNICATION_H_ */
