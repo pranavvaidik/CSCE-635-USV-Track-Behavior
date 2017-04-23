@@ -25,7 +25,10 @@ class serial_comm
         void gimbal_roll(float);
         void gimbal_pitch(float);
         void fotokite_yaw(float);
+        void stop_remote_control();
 };
+
+
 
 void serial_comm::serial_comm_initialize()
 {
@@ -76,6 +79,11 @@ void serial_comm::send_serial_command(string str){
 int serial_comm::send_char(char a){
     serial<<a<<endl;
     return 0;
+}
+
+void serial_comm::stop_remote_control(){
+    send_serial_command("stop");
+    return;
 }
 
 void serial_comm::gimbal_pitch_roll(float pitch_value, float roll_value)
