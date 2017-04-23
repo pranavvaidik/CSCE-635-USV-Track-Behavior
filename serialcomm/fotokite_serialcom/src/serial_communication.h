@@ -21,6 +21,7 @@ class serial_comm
         void serial_comm_initialize();
         int send_char(char);
         void send_serial_command(string);
+        void gimbal_pitch_roll(float, float);
         void gimbal_roll(float);
         void gimbal_pitch(float);
         void fotokite_yaw(float);
@@ -47,8 +48,8 @@ void serial_comm::serial_comm_initialize()
     if (strcmp(ground_station_response,"nsh>"))
     {
         cout<<"connection with Ground Station Established Successfully";
-        serial<<"RemoteControl start";
-        serial<<"";
+        send_serial_command("Checksum 0");
+        send_serial_command("RemoteControl start");
     }
     else
     {
@@ -62,12 +63,26 @@ void serial_comm::serial_comm_initialize()
 void serial_comm::send_serial_command(string str){
     serial<<str<<endl;
     cout << "command sent: "<< str <<endl;
+    
+    int buf_size = 10;
+    char ground_station_response[buf_size];
+    serial.read(ground_station_response,buf_size);
+    
+    cout<< ground_station_response << endl;
+    
     return;
 }
 
 int serial_comm::send_char(char a){
     serial<<a<<endl;
     return 0;
+}
+
+void serial_comm::gimbal_pitch_roll(float pitch_value, float roll_value)
+{
+    string serial_command = "Gimbal " + to_string(pitch_value)+ "," + to_string(roll_value) + "<CR>";
+    send_serial_command(serial_command);
+    //serial<<endl;
 }
 
 void serial_comm::gimbal_roll(float value)
@@ -84,7 +99,8 @@ void serial_comm::gimbal_pitch(float value)
 }
 void serial_comm::fotokite_yaw(float value)
 {
-     string serial_command = "GimbalYaw " + to_string(value) + "<CR>";
+    //string serial_command = "GimbalYaw " + to_string(value) + "<CR>";
+    string serial_command = "Yaw " + to_string(value) + "<CR>";
     send_serial_command(serial_command);
     //serial<<endl;
 }
