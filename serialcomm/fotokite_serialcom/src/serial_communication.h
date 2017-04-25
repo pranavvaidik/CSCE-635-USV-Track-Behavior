@@ -90,27 +90,27 @@ void serial_comm::stop_remote_control(){
 
 void serial_comm::gimbal_pitch_roll(float pitch_value, float roll_value)
 {
-    string serial_command = "Gimbal " + to_string(pitch_value)+ "," + to_string(roll_value) + "<CR>";
+    string serial_command = "Gimbal " + to_string(pitch_value)+ "," + to_string(roll_value);
     send_serial_command(serial_command);
     //serial<<endl;
 }
 
 void serial_comm::gimbal_roll(float value)
 {
-    string serial_command = "GimbalRoll " + to_string(value) + "<CR>";
+    string serial_command = "GimbalRoll " + to_string(value);
     send_serial_command(serial_command);
     //serial<<endl;
 }
 void serial_comm::gimbal_pitch(float value)
 {
-    string serial_command = "GimbalPitch " + to_string(value) + "<CR>";
+    string serial_command = "GimbalPitch " + to_string(value);
     send_serial_command(serial_command);
     //serial<<endl;
 }
 void serial_comm::fotokite_yaw(float value)
 {
     //string serial_command = "GimbalYaw " + to_string(value) + "<CR>";
-    string serial_command = "Yaw " + to_string(value) + "<CR>";
+    string serial_command = "Yaw " + to_string(value);
     send_serial_command(serial_command);
     //serial<<endl;
 }
