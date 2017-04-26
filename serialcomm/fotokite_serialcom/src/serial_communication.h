@@ -11,6 +11,8 @@
 #include <SerialStream.h>
 #include <string.h>
 #include <math.h>
+#include <time.h>
+#include <unistd.h>
 using namespace std;
 using namespace LibSerial;
 
@@ -34,13 +36,18 @@ class serial_comm
 
 void serial_comm::serial_comm_initialize()
 {
-    serial.Open("/dev/ttyACM0");
+	serial.Close();
+	cout<<"Pause for 2 seconds for the port to close! "<<endl;
+	usleep(2000000);
+	cout<<"opening the port"<<endl;
+    serial.Open("/dev/ttyACM6");
+    cout<<"Port opened"<<endl;
     serial.SetCharSize(SerialStreamBuf::CHAR_SIZE_8);
     serial.SetBaudRate(SerialStreamBuf::BAUD_115200);
     serial.SetNumOfStopBits(1);
     serial.SetFlowControl(SerialStreamBuf::FLOW_CONTROL_NONE);
-    
-    
+    usleep(2000000);
+    cout<<"sending carriage sequence"<<endl;
     //Sending 5 carriage sequences
     string carriage_sequence = "\r\r\r\r\r";
     serial<< carriage_sequence;
@@ -53,8 +60,12 @@ void serial_comm::serial_comm_initialize()
     if (strcmp(ground_station_response,"nsh>"))
     {
         cout<<"connection with Ground Station Established Successfully";
-        send_serial_command("Checksum 0");
+        usleep(1000000);
+        send_serial_command("stop");
+        usleep(1000000);
         send_serial_command("RemoteControl start");
+        usleep(1000000);
+        send_serial_command("Checksum 0");
     }
     else
     {
@@ -69,7 +80,7 @@ void serial_comm::send_serial_command(string str){
     serial<<str<<endl;
     cout << "command sent: "<< str <<endl;
     
-    int buf_size = 10;
+    int buf_size = 1;
     char ground_station_response[buf_size];
     serial.read(ground_station_response,buf_size);
     
