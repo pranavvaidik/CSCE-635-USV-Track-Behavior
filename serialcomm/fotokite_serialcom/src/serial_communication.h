@@ -36,11 +36,16 @@ class serial_comm
 
 void serial_comm::serial_comm_initialize()
 {
-	serial.Close();
-	cout<<"Pause for 2 seconds for the port to close! "<<endl;
-	usleep(2000000);
-	cout<<"opening the port"<<endl;
-    serial.Open("/dev/ttyACM6");
+    serial.Close();
+    cout<<"Pause for 2 seconds for the port to close! "<<endl;
+    usleep(2000000);
+    
+    string serial_port_location;
+    cout<<"enter serial port location and press return key: ";
+    getline(cin,serial_port_location);
+    serial.Open(serial_port_location);
+    cout<<"opening the port"<<endl;
+    
     cout<<"Port opened"<<endl;
     serial.SetCharSize(SerialStreamBuf::CHAR_SIZE_8);
     serial.SetBaudRate(SerialStreamBuf::BAUD_115200);
@@ -59,17 +64,17 @@ void serial_comm::serial_comm_initialize()
     
     if (strcmp(ground_station_response,"nsh>"))
     {
-        cout<<"connection with Ground Station Established Successfully";
         usleep(1000000);
         send_serial_command("stop");
         usleep(1000000);
         send_serial_command("RemoteControl start");
         usleep(1000000);
+        cout<<"connection with Ground Station Established Successfully";
         send_serial_command("Checksum 0");
     }
     else
     {
-        cout<<"connection failed";
+        cout<<"connection failed.. Please re-check the serial_port_location value entered";
         return;
     }
     
